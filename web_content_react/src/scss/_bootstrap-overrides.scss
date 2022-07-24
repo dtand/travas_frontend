@@ -1,0 +1,89 @@
+// Bootstrap overrides for this template
+.bg-primary {
+    background: $theme-primary;
+    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
+    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+}
+
+.text-primary {
+    color: $theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid;
+    border-color: white;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: white;
+        border-color: $theme-primary;
+        background-color: $theme-primary;
+    }
+}
+
+.btn {
+    border-radius: 300px;
+    @include alt-font;
+}
+
+.btn-xl {
+    font-size: 11px;
+    padding: 15px 45px;
+}
+
+// The dropdown menu
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $zindex-dropdown;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: $dropdown-min-width;
+  padding: $dropdown-padding-y 0;
+  margin: $dropdown-spacer 0 0; // override default ul
+  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+  color: $body-color;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  background-color: $dropdown-bg;
+  background-clip: padding-box;
+  border: $dropdown-border-width solid $dropdown-border-color;
+  @include border-radius($dropdown-border-radius);
+  @include box-shadow($dropdown-box-shadow);
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.row-odd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: #f2f2f3;
+}
+
+.row-even {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: #e7e7ec;
+}
+
+
+

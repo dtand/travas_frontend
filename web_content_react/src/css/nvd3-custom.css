@@ -1,0 +1,44 @@
+
+/**
+  Scatter plot buy and sell series
+**/
+.buy-series .nv-point {
+  stroke-opacity: .8!important;
+  stroke-width: 16px!important;
+  fill-opacity: .8!important;
+  fill: green!important;
+  stroke: green!important;
+  
+}
+
+.buy-series .nv-line {
+  stroke-width: 0px!important;
+}
+
+/**
+  Scatter plot buy and sell series
+**/
+.sell-series .nv-point {
+  stroke-opacity: .75!important;
+  stroke-width: 14px!important;
+  fill-opacity: 1!important;
+  fill: red!important;
+  stroke: red!important;
+}
+
+.sell-series .nv-line {
+  stroke-width: 0px!important;
+}
+
+
+/**
+  CSS for chart lines and fill specification
+  for single lined graph
+**/
+.nvd3 .nv-group.nv-series-0 {
+  fill: rgb(0, 123, 255,.1)!important; /* color for area */
+}
+
+.nvd3 .nv-groups path.nv-line {
+  stroke-width: 3px;
+}
